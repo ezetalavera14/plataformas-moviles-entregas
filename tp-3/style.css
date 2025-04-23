@@ -1,0 +1,45 @@
+/* Centrar el título h1 */
+h1 {
+    text-align: center;
+}
+
+/* Aplicar fuente con serifas a todos los párrafos */
+p {
+    font-family: serif;
+}
+
+/* Fondo del #primer-parrafo */
+#primer-parrafo {
+    background-color: #CEE;
+}
+
+/* Cambiar color de <em> dentro del primer párrafo */
+#primer-parrafo em {
+    color: #933;
+}
+
+/* Mostrar outline en todos los enlaces */
+a {
+    outline: 1px solid #333;
+}
+
+/* Opacidad al 100% del párrafo con clase .fuente */
+p.fuente {
+    opacity: 1; /* o 100% no es válido; se usa 1 */
+}
+
+/* Eliminar sombra de texto a todos los párrafos sin id */
+p:not([id]) {
+    text-shadow: none;
+}
+
+/* BONUS TRACK: Color #000 para el párrafo .fuente */
+p.fuente {
+    color: #000;
+}
+
+/* BONUS TRACK: Texto en negrita y color #C62 para .complicado */
+.complicado {
+    font-weight: bold;
+    color: #C62;
+}
