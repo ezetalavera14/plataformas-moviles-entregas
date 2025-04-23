@@ -1,0 +1,82 @@
+/* Fondo del documento y color del texto */
+body {
+    background-color: #222;
+    color: #ee6;
+    font-family: sans-serif;
+}
+
+/* Centrar el título principal */
+h1 {
+    text-align: center;
+    transition: color 0.3s;
+}
+
+/* Color #eee para todos los títulos */
+h1, h2, h3 {
+    color: #eee;
+    text-transform: uppercase; /* Bonus: texto en mayúscula */
+}
+
+/* Borde inferior blanco en <strong> */
+strong {
+    border-bottom: 1px solid white;
+}
+
+/* Estilo para .the-force */
+.the-force {
+    background-color: #444;
+    font-weight: bold;
+}
+
+/* Estilo para .light-side */
+.light-side {
+    color: #66f;
+}
+
+/* Estilo para .dark-side */
+.dark-side {
+    color: #f33;
+}
+
+/* Listado con ID og-trilogy */
+#og-trilogy {
+    list-style-type: circle;
+}
+
+/* Segundo listado de películas (trilogía de precuelas) */
+.movies-list:nth-of-type(2) {
+    padding-left: 20px;
+}
+
+/* Último elemento del tercer listado (trilogía de secuelas) */
+.movies-list:nth-of-type(3) li:last-child {
+    margin-top: 15px;
+}
+
+/* Bonus: primera línea del primer párrafo */
+p:first-of-type::first-line {
+    color: #efe;
+}
+
+/* Bonus: hover sobre título principal */
+h1:hover {
+    color: #fff;
+}
+
+/* Bonus: links visitados */
+a:visited {
+    color: grey;
+}
+
+/* Bonus: links sin href en cursiva */
+a:not([href]) {
+    font-style: italic;
+}
+
+/* Bonus: alternar fondo de ítems en listados */
+.movies-list li:nth-child(odd) {
+    background-color: #111;
+}
+.movies-list li:nth-child(even) {
+    background-color: #333;
+}
